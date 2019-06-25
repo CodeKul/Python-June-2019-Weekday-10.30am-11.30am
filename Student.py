@@ -25,7 +25,18 @@ class College:
         self.students.append(stu)
         print("New student is enrolled")
 
-    # def get_topper(self):
+    def get_topper(self):
+        topper = self.students[0]
+        for stu in self.students:
+            if topper.marks < stu.marks:
+                topper = stu
+        return topper
+
+    def get_result(self, stu):
+        if stu.marks >= 40:
+            print("Pass")
+        else:
+            print("Fail")
 
 
 s1 = Student(1, "A", 80)
@@ -40,3 +51,6 @@ c1 = College("ABCDEF", [s1, s2, s3, s4, s5, s6])
 c1.show_student_list()
 c1.enroll_new_student(s7)
 c1.show_student_list()
+
+print("Topper")
+c1.get_topper().information()

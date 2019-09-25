@@ -6,5 +6,9 @@
 6) Pybrain
 7) Tensorflow
 
+- Data Analysis
+- Data Visualisation
+- Machine Learning
+
 1) TkInter
 2) Django

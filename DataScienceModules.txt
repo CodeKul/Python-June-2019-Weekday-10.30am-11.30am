@@ -1,14 +1,12 @@
-1) Pandas
-2) NumPy
-3) SciPy
-4) Matplotlib
-5) Scikit learn
-6) Pybrain
-7) Tensorflow
+1) Data Analysis
+- Pandas
+- NumPy
+- SciPy
 
-- Data Analysis
-- Data Visualisation
-- Machine Learning
+2) Data Visualisation
+- Matplotlib
 
-1) TkInter
-2) Django
+3) Machine Learning
+- Scikit learn
+- Pybrain
+- Tensorflow

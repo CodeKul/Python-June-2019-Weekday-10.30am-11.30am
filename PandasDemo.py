@@ -47,3 +47,31 @@ df.Data_structures = df.Data_structures.astype(int)
 
 print(df)
 
+df = pd.read_csv('mycsv.csv')
+
+print(df)
+
+df.info()
+
+print(df.describe())
+
+
+df = pd.read_csv('dataset1.csv')
+print(df)
+
+df.drop(columns=['Index'], inplace=True)
+print(df)
+
+df.info()
+
+df.Cost = df.Cost.fillna(df.Total - df.Tax)
+
+print(df)
+
+df.rename(columns={'Tax':'GST'}, inplace=True)
+
+print(df)
+
+# df.Cost = df.Cost.astype(str)
+
+print(df[['Cost', 'GST', 'Total']].corr())

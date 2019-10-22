@@ -75,3 +75,25 @@ print(df)
 # df.Cost = df.Cost.astype(str)
 
 print(df[['Cost', 'GST', 'Total']].corr())
+
+print(df.iloc[3:7,1:4])
+
+print(df.loc[:, 'Item':'GST'])
+
+# df.GST = df.GST + 100
+# print(df.loc[:, 'Item':'GST'])
+
+f = lambda x: x * 2
+df.Cost = df.Cost.apply(f)
+print(df)
+
+
+sorted_df = df.sort_values(by='Cost', ascending=True)
+print(sorted_df)
+
+filter1 = df['Cost'] > 15
+filtered_df = df[filter1]
+
+filter2 = (df.Cost > 10) & (df.Cost < 15)
+filtered_df = df[filter2]
+print(filtered_df)
